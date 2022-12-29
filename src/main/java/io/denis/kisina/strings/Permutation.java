@@ -1,8 +1,8 @@
 package io.denis.kisina.strings;
 
-public class Permutate {
+class Permutation {
 
-    public static void permutate(String str){
+    public static void permutation(String str){
         permutation("", str);
     }
 
@@ -21,6 +21,6 @@ public class Permutate {
     }
 
     public static void main(String[] args) {
-        permutate("abc");
+        permutation("abc");
     }
 }

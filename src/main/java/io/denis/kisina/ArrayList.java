@@ -1,13 +1,12 @@
 package io.denis.kisina;
 
-public class ArrayList implements IArrayList{
+class ArrayList implements IArrayList{
 
-    private final int INITIAL_LENGTH = 4;
     private int size;
     int[] arrayHolder;
 
     public ArrayList() {
-        arrayHolder = new int[INITIAL_LENGTH];
+        arrayHolder = new int[4];
         size = 0;
     }
 

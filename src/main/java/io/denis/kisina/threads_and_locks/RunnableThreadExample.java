@@ -1,20 +1,20 @@
 package io.denis.kisina.threads_and_locks;
 
-public class RunnableThreadExample implements Runnable{
+class RunnableThreadExample implements Runnable {
 
-    public int count = 0;
+    private int count = 0;
 
-    @Override
     public void run() {
         System.out.println("RunnableThread starting.");
 
         try {
-            while(count < 5){
+            while (count < 5) {
                 Thread.sleep(500);
                 count++;
             }
         }catch (InterruptedException exc) {
             System.out.println("RunnableThread interrupted.");
+            throw new IllegalArgumentException();
         }
         System.out.println("RunnableThread terminating.");
     }
@@ -29,8 +29,8 @@ public class RunnableThreadExample implements Runnable{
                 Thread.sleep(250);
             } catch (InterruptedException exc) {
                 exc.printStackTrace();
+                throw new IllegalArgumentException();
             }
         }
     }
-
 }

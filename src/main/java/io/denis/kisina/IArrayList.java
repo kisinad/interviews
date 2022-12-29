@@ -1,10 +1,14 @@
 package io.denis.kisina;
 
-public interface IArrayList {
+interface IArrayList {
 
     public void append(int value);
+
     public int get(int index);
+
     public void set(int index, int value);
+
     public void delete(int index);
+
     public int size();
 }

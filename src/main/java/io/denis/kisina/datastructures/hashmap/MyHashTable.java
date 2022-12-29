@@ -1,8 +1,8 @@
-package io.denis.kisina.datastructures;
+package io.denis.kisina.datastructures.hashmap;
 
 import java.util.LinkedList;
 
-public class MyHashTable implements IMyHashTable{
+class MyHashTable implements IMyHashTable{
     private static final int INITIAL_SIZE = 20;
     private int tableSize;
     private LinkedList[] table;
@@ -16,7 +16,6 @@ public class MyHashTable implements IMyHashTable{
         table = new LinkedList[tableSize];
     }
 
-    @Override
     public void put(Object key, Object value) {
         if(key == null){return;}
 

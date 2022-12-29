@@ -1,7 +1,9 @@
 package io.denis.kisina;
 
-public enum SingletonEnum {
+enum SingletonEnum {
     INSTANCE;
 
-    public String getConfiguration() {return "abcs";}
+    public String getConfiguration() {
+        return "abcs";
+    }
 }
